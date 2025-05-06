@@ -1,0 +1,68 @@
+background(0);
+  textSize(80);
+  text(keyCode,200,200);
+  text(key,200,200);
+-------------------------------------------------
+float xmp = 0;
+float bg = 0;
+float ellipseX = 0;
+float diameter = 50;
+
+void setup()
+{
+size(800,400);
+noStroke();
+}
+
+void draw()
+{
+  background(0);
+  noStroke();
+  fill(255,100,100);
+  if(mouseX > width / 2)
+  {
+    fill(0,255,0);
+    stroke(255,0,0);
+    
+  }
+  
+ ellipse(ellipseX, height /2, diameter, diameter);
+ ellipseX = ellipseX+5;
+}
+
+(pelota en movimiento)
+
+--------------------------------------------------------
+
+float xmp = 0;
+float bg = 0;
+float ellipseX = 200;
+float diameter = 200;
+ size(640,480);
+ ellipse(ellipseX, height /2, diameter, diameter);
+ ellipseX = ellipseX+5;
+
+comando de esfera
+----------------------------------------------------------
+
+float X = 0;
+float velocidad = 2;
+
+void setup() {
+  size(640, 480);
+}
+
+void draw() {
+  background(0);
+  X += velocidad;
+ if (X > width || X < 0) {
+   velocidad *= -1;
+ }
+ fill(255);
+ textSize(32);
+ textAlign(CENTER, CENTER);
+ text("el aero puerto", X, height/2);
+}
+
+texto en movimiento
+----------------------------------------------------
